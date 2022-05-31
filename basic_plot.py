@@ -16,13 +16,11 @@ import tkinter.messagebox as mb
 # plt.xkcd()
 
 # X values - ages
-developers_x = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 45]
+developers_x = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]
 
 # Y values - salary
 py_devs = [35_500, 37_000, 40_000, 45_000, 50_000, 52_000, 55_500, 56_000, 59_000, 62_300, 63_000]
 js_devs = [28_000, 35_500, 37_000, 40_000, 45_000, 47_000, 52_000, 53_500, 55_000, 57_000, 64_000]
-
-all_devs = [28_000, 35_500, 37_000, 40_000, 45_000, 47_000, 52_000, 53_500, 55_000, 57_000, 64_000]
 
 # Create plots
 plt.plot(developers_x, py_devs, marker="o", markersize=6,linewidth=2, linestyle="--", color="b", label="Python developers")
