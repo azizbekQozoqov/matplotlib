@@ -10,3 +10,7 @@
 
 [Countries urbanization](Urbanization.py)
 <img src="./.figs/Urbanization.png"/>
+
+[Most valuable football players](valuable_players.py)
+
+<img src="./.figs/football_players.png"/>
