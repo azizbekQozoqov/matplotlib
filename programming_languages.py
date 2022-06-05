@@ -1,3 +1,8 @@
+"""
+Made by www.AZIZBEKDEV.com
+
+data from https://www.statista.com/
+"""
 from matplotlib import pyplot as plt
 import numpy as np
 

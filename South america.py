@@ -1,3 +1,8 @@
+"""
+Made by www.AZIZBEKDEV.com
+
+data from https://www.wikipedia.org/
+"""
 import numpy as np
 from matplotlib import pyplot as plt
 
