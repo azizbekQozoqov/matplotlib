@@ -6,7 +6,7 @@ data from https://www.transfermarkt.com/
 import matplotlib.pyplot as plt
 import numpy as np
 
-plt.xkcd()
+plt.style.use("seaborn-paper")
 
 values = np.array([
     160,
@@ -34,10 +34,9 @@ players = np.array([
     "Joshua Kimmich"
 ])
 
-plt.barh(players, values, color="r")
+plt.barh(players, values, color="#ff1a40")
 
 plt.title("MOST VALUABLE FOOTBALL PLAYERS")
-plt.tight_layout()
 plt.xlabel("Value (m/€)")
 plt.ylabel("Players")
 
