@@ -1,22 +1,18 @@
 """
-Very basic scatter plot example
+code from https://matplotlib.org/
 """
-
 import numpy as np
 import matplotlib.pyplot as plt
 
-plt.xkcd()
+# Fixing random state for reproducibility
+np.random.seed(19680801)
 
-x = np.random.normal(5.0, 1.0, 1000)
-y = np.random.normal(10.0, 2.0, 1000)
 
-# x1 = np.array()
+N = 50
+x = np.random.rand(N)
+y = np.random.rand(N)
+colors = np.random.rand(N)
+area = (30 * np.random.rand(N))**2  # 0 to 15 point radii
 
-plt.scatter(x+0.1, y+0.13, s=10, c="green", alpha=0.5)
-plt.scatter(x+1, y+2, s=4, marker="x", c="red", linewidth=1, alpha=0.4)
-
-plt.tight_layout()
-plt.title("Very basic scatter plot example")
-
-if __name__ == "__main__":
-    plt.show()
+plt.scatter(x, y, s=area, c=colors, alpha=0.5)
+plt.show()

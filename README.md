@@ -14,3 +14,10 @@
 [Most valuable football players](valuable_players.py)
 
 <img src="./.figs/football_players.png"/>
+
+[Basic scatter plot example](./scatter.py)
+
+<img src="./.figs/basic-scatter.png"/>
+
+[Internet users in UZBEKISTAN](./internet-users-uzbekistan.py)
+<img src="./.figs/internet_users_in_uzbekistan.png" />
