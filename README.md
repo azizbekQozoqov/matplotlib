@@ -24,3 +24,6 @@
 
 [Internet users in UZBEKISTAN](./internet-users-uzbekistan.py)
 <img src="./.figs/internet_users_in_uzbekistan.png" />
+
+[Filled plot](./filled-plot.py)
+<img src="./.figs/filled-plot.png" />
