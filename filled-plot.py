@@ -9,6 +9,8 @@ dev_salaries = csv_data["All_Devs"]
 py_salaries = csv_data["Python"]
 js_salaries = csv_data["JavaScript"]
 
+
+
 plt.plot(
     cd_ages,
     dev_salaries,
@@ -21,17 +23,37 @@ plt.plot(
     cd_ages,
     py_salaries,
     color="#000",
-    linestyle="--",
-    label="All Developers"
+    label="Python"
 )
 
 # Fill
 overall_median=53000
-plt.fill_between(cd_ages, py_salaries,color="b", alpha=.3, y2=overall_median)
+plt.fill_between(
+    cd_ages, 
+    py_salaries,
+    dev_salaries,
+    color="b", 
+    alpha=.3, 
+    where=(dev_salaries < py_salaries),
+    interpolate=True,
+    label="Above age"
+)
+plt.fill_between(
+    cd_ages, 
+    py_salaries,
+    dev_salaries,
+    color="r", 
+    alpha=.3, 
+    where=(dev_salaries > py_salaries),
+    interpolate=True,
+    label="Below age"
+)
+
 
 
 # Title configuration
 plt.legend()
+plt.grid(True)
 plt.title("Median salary (USD) by age")
 plt.xlabel("Ages")
 plt.ylabel("Median salary (USD)")
